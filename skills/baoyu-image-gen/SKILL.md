@@ -204,7 +204,7 @@ ${BUN_X} {baseDir}/scripts/main.ts --prompt "A cat" --image out.png --provider r
 1. `--ref` provided + no `--provider` → auto-select Google first, then OpenAI, then Replicate
 2. `--provider` specified → use it (if `--ref`, must be `google`, `openai`, or `replicate`)
 3. Only one API key available → use that provider
-4. Multiple available → default to Replicate (`google/nano-banana-pro`)
+4. Multiple available → default to Google
 
 ## Quality Presets
 

@@ -546,17 +546,17 @@ function detectProvider(args: CliArgs): Provider {
   }
 
   const available = [
-    hasReplicate && "replicate",
     hasGoogle && "google",
     hasOpenai && "openai",
     hasDashscope && "dashscope",
+    hasReplicate && "replicate",
   ].filter(Boolean) as Provider[];
 
   if (available.length === 1) return available[0]!;
   if (available.length > 1) return available[0]!;
 
   throw new Error(
-    "No API key found. Set REPLICATE_API_TOKEN, GOOGLE_API_KEY, GEMINI_API_KEY, OPENAI_API_KEY, or DASHSCOPE_API_KEY.\n" +
+    "No API key found. Set GOOGLE_API_KEY, GEMINI_API_KEY, OPENAI_API_KEY, DASHSCOPE_API_KEY, or REPLICATE_API_TOKEN.\n" +
       "Create ~/.baoyu-skills/.env or <cwd>/.baoyu-skills/.env with your keys."
   );
 }
