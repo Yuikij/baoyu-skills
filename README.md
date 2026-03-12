@@ -43,7 +43,7 @@ Publishing to ClawHub releases the published skill under `MIT-0`, per ClawHub's 
 Run the following command in Claude Code:
 
 ```bash
-/plugin marketplace add jimliu/baoyu-skills
+/plugin marketplace add JimLiu/baoyu-skills
 ```
 
 ### Install Skills

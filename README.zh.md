@@ -43,7 +43,7 @@ clawhub install baoyu-markdown-to-html
 在 Claude Code 中运行：
 
 ```bash
-/plugin marketplace add jimliu/baoyu-skills
+/plugin marketplace add JimLiu/baoyu-skills
 ```
 
 ### 安装技能
