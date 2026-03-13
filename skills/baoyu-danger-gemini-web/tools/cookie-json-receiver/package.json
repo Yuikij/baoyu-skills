@@ -1,0 +1,14 @@
+{
+  "name": "cookie-json-receiver",
+  "version": "1.0.0",
+  "description": "Simple HTTP server to receive cookie.json from Chrome Extension",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "service:install": "bash scripts/install-systemd.sh",
+    "service:status": "bash scripts/manage-service.sh status",
+    "service:restart": "bash scripts/manage-service.sh restart",
+    "service:logs": "bash scripts/manage-service.sh logs",
+    "start:bun": "bun run src/index.ts"
+  }
+}

@@ -1,0 +1,21 @@
+[Unit]
+Description=Gemini Cookie JSON Receiver
+After=network.target
+
+[Service]
+Type=simple
+User=%i
+Group=%i
+WorkingDirectory=%h/baoyu-skills/skills/baoyu-danger-gemini-web/tools/cookie-json-receiver
+EnvironmentFile=%h/.config/cookie-json-receiver/env
+ExecStart=/usr/bin/node src/index.js
+Restart=always
+RestartSec=2
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=%h/.local/share/baoyu-skills
+
+[Install]
+WantedBy=multi-user.target

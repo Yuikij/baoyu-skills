@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Cookie Uploader",
+  "version": "1.1",
+  "description": "Upload Google cookies to a local helper server for Gemini API access.",
+  "permissions": [
+    "cookies",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.google.com/",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Upload Gemini Cookies"
+  }
+}
